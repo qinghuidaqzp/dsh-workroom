@@ -7,6 +7,10 @@ A right-sidebar plugin for DeepSeek Harness (`dsh`): a three-level **agent auton
 - **The switch sets how much the agent decides alone.** Day ("Ask every step") asks before edits and commands; dusk ("Normal") asks before installs; night ("Hands-off") adds no prompts. High-risk commands such as push, publish and `sudo` ask you in every level.
 - **The room shows session state.** A monitor typing code means a session is running; an amber sign, a cat sitting up and a pulsing ring around the switch mean a session is waiting for you; green means new results; red means the last turn failed. An optional chime sounds when you are needed.
 
+![Workroom in the dsh right sidebar](screenshots/window.png)
+
+Screenshots show the Chinese UI; the plugin also ships English labels.
+
 ## Levels
 
 | Level | Room | Extra approval prompts for |
@@ -14,6 +18,10 @@ A right-sidebar plugin for DeepSeek Harness (`dsh`): a three-level **agent auton
 | Hands-off | night | high-risk commands only |
 | Normal (default) | dusk | installing dependencies or downloading code; high-risk commands |
 | Ask every step | day | changing files, running commands, installs, local Git history changes, high-risk commands, other unclassified tools |
+
+| Hands-off | Normal | Ask every step |
+|---|---|---|
+| ![Hands-off: the room at night](screenshots/away.png) | ![Normal: the room at dusk](screenshots/normal.png) | ![Ask every step: the room by day](screenshots/present.png) |
 
 Read-only tools (`read`, `grep`, `glob`, `web_fetch`, …) are never stopped.
 
