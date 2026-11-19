@@ -1,3 +1,4 @@
+;(function () {
 /**
  * dsh-workroom, Web half: the Workroom tab in the right sidebar.
  *
@@ -631,3 +632,5 @@ window.__ModuleLoader__.load({
     }
   },
 })
+
+})();
