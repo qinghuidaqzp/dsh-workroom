@@ -1,0 +1,8 @@
+# dsh-workroom: autonomy switch + status room in the right sidebar.
+# The `level` field is changed from the Workroom tab; you can also set it here: away | normal | present.
+- insert:
+    - id: workroom
+      name: dsh-workroom
+      config:
+        # Extra regular expressions for shell commands that need approval in every level.
+        extraDangerCommands: []

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Workroom",
+    "description": "A three-level autonomy switch in the right sidebar that adds approval prompts (hands-off, normal, ask every step), and a pixel room that shows whether your sessions are working, waiting for you, done or failed."
+  }
+}

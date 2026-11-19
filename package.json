@@ -1,0 +1,32 @@
+{
+  "name": "dsh-workroom",
+  "version": "0.1.0",
+  "description": "A right-sidebar Workroom for DeepSeek Harness: a three-level autonomy switch (hands-off, normal, ask every step) that adds approval prompts through tools/pre-execute, and a pixel room that shows whether your sessions are working, waiting for you, done or failed.",
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "approval", "permission", "autonomy", "sidebar", "status", "webgl"],
+  "license": "MIT",
+  "author": "qinghuidaqzp",
+  "homepage": "https://github.com/qinghuidaqzp/dsh-workroom#readme",
+  "repository": { "type": "git", "url": "git+https://github.com/qinghuidaqzp/dsh-workroom.git" },
+  "bugs": { "url": "https://github.com/qinghuidaqzp/dsh-workroom/issues" },
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "icon": "./icon.svg",
+  "files": ["index.js", "client.js", "lib", "locale", "icon.svg", "cordis.patch.yml", "README.md", "README.en.md", "LICENSE"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": { "platform": "web" }
+  },
+  "engines": { "node": ">=22.12.0", "dsh": ">=0.2.0-0 <0.3.0" },
+  "scripts": { "test": "node --test test/*.test.js" },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.1.0",
+    "@deepseek-ai/schemastery": "^3.19.0"
+  }
+}
