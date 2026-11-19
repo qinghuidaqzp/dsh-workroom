@@ -1,6 +1,6 @@
 {
   "meta": {
     "title": "Workroom",
-    "description": "A three-level autonomy switch in the right sidebar that adds approval prompts (hands-off, normal, ask every step), and a pixel room that shows whether your sessions are working, waiting for you, done or failed."
+    "description": "A pixel room in the right sidebar that keeps an eye on your agent: running, waiting for you, done or failed at a glance. Its glass knob switches day, dusk and night and sets how often the agent asks before acting."
   }
 }

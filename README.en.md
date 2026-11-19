@@ -2,10 +2,10 @@
 
 English | [中文](README.md)
 
-A right-sidebar plugin for DeepSeek Harness (`dsh`): a three-level **agent autonomy switch**, and a pixel room that shows what your sessions are doing.
+A **pixel room that keeps an eye on your agent**, in the right sidebar of DeepSeek Harness (`dsh`).
 
-- **The switch sets how much the agent decides alone.** Day ("Ask every step") asks before edits and commands; dusk ("Normal") asks before installs; night ("Hands-off") adds no prompts. High-risk commands such as push, publish and `sudo` ask you in every level.
-- **The room shows session state.** A monitor typing code means a session is running; an amber sign, a cat sitting up and a pulsing ring around the switch mean a session is waiting for you; green means new results; red means the last turn failed. An optional chime sounds when you are needed.
+- **The room watches your sessions for you.** A monitor typing code means a session is running; an amber sign, a cat sitting up and a glowing ring around the knob mean a session is waiting for your approval; a green light and a tick mean new results; red means the last turn failed. An optional chime sounds when you are needed. A glance at the room replaces switching back to the chat to check.
+- **The knob sets how much you trust the agent.** Day ("Ask every step") asks before edits and commands; dusk ("Normal") asks before installs; night ("Hands-off") adds no prompts. High-risk commands such as push, publish and `sudo` ask you in every level.
 
 ![Workroom in the dsh right sidebar](screenshots/window.png)
 
